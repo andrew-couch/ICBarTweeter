@@ -1,0 +1,64 @@
+---
+title: "Web Scraper"
+author: "Andrew Couch"
+date: "3/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Sites to scrape
+## Arrests
+https://www.iowa-city.org/IcgovApps/Police/ArrestBlotter
+## Police Activity
+https://www.iowa-city.org/IcgovApps/police/activitylog
+
+```{r}
+# Load Packages
+library(tidyverse)
+library(rvest)
+```
+
+
+```{r}
+# Helper function to look into detail of arrest and extract date of birth, was arrested, and officer name
+get_detail <- function(link){
+  
+  link <- read_html(link)
+  
+  tibble(dob = link %>% html_element("dd:nth-child(6)") %>% html_text(),
+         jailed = link %>% html_element("dd:nth-child(8)") %>% html_text(),
+         officer = link %>% html_element("dd:nth-child(14)") %>% html_text())
+
+}  
+```
+
+
+```{r}
+# Scrape arrests/charges and append to a table for future analysis
+read_html("https://www.iowa-city.org/IcgovApps/Police/ArrestBlotter") %>% 
+  html_element("table") %>% 
+  html_table() %>% 
+  rename_all(~tolower(.x) %>% str_replace_all(" ", "_")) %>% 
+  bind_cols(tibble(details = link %>% 
+                     html_elements(".body-content a") %>% 
+                     html_attr("href"))) %>% 
+  mutate(details = paste0("https://www.iowa-city.org", details),
+         details = map(details, get_detail)) %>% 
+  unnest(details) %>% 
+  write_csv("E:/School/R Work/ICBarTweeter/Data/charge_history.csv", append = TRUE)
+```
+
+
+
+```{r}
+# Scrape overall activity and append to a table for future analysis
+read_html("https://www.iowa-city.org/IcgovApps/police/activitylog") %>% 
+  html_element("table") %>% 
+  html_table() %>% 
+  rename_all(~tolower(.x) %>% str_replace(" ", "_")) %>% 
+  write_csv("E:/School/R Work/ICBarTweeter/Data/police_activity.csv", append = TRUE)
+```
+
