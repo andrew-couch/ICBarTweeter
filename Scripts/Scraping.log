@@ -1,0 +1,2350 @@
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Error: Problem with `mutate()` input `details`.
+x Timeout was reached: [www.iowa-city.org] Operation timed out after 10000 milliseconds with 0 out of 0 bytes received
+i Input `details` is `map(details, get_detail)`.
+Backtrace:
+     x
+  1. +-`%>%`(...)
+  2. +-readr::write_csv(...)
+  3. | \-readr::write_delim(...)
+  4. |   +-base::stopifnot(is.data.frame(x))
+  5. |   \-base::is.data.frame(x)
+  6. +-tidyr::unnest(., details)
+  7. +-dplyr::mutate(...)
+  8. +-dplyr:::mutate.data.frame(...)
+  9. | \-dplyr:::mutate_cols(.data, ...)
+ 10. |   +-base::withCallingHandlers(...)
+ 11. |   \-mask$eval_all_mutate(dots[[i]])
+ 12. +-purrr::map(details, get_detail)
+ 13. | \-global::.f(.x[[i]], ...)
+ 14. |   +-xml2::read_html(link)
+ 15. |   \-xml2:::read_html.default(link)
+ 16. |     +-base::suppressWarnings(...)
+ 17. |     | \-base::withCallingHandlers(...)
+ 18. |     +-xml2::read_xml(x, encoding = encoding, ..., as_html = TRUE, options = options)
+ 19. |     \-xml2:::read_xml.character(...)
+ 20. |       \-xml2:::read_xml.connection(...)
+ 21. |         +-base::open(x, "rb")
+ 22. |         \-base::open.connection(x, "rb")
+ 23. \-base::.handleSimpleError(...)
+ 24.   \-dplyr:::h(simpleError(msg, call))
+Execution halted
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Error in open.connection(x, "rb") : HTTP error 500.
+Calls: %>% ... html_table -> html_element -> read_html -> read_html.default
+Execution halted
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Error in open.connection(x, "rb") : HTTP error 500.
+Calls: %>% ... html_table -> html_element -> read_html -> read_html.default
+Execution halted
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.0.4     v dplyr   1.0.2
+v tidyr   1.1.2     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.1.2     v dplyr   1.0.7
+v tidyr   1.1.3     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+Warning messages:
+1: package 'tibble' was built under R version 4.0.5 
+2: package 'tidyr' was built under R version 4.0.5 
+3: package 'dplyr' was built under R version 4.0.5 
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.1.2     v dplyr   1.0.7
+v tidyr   1.1.3     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.0
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+Warning messages:
+1: package 'tibble' was built under R version 4.0.5 
+2: package 'tidyr' was built under R version 4.0.5 
+3: package 'dplyr' was built under R version 4.0.5 
+
+Attaching package: 'rvest'
+
+The following object is masked from 'package:readr':
+
+    guess_encoding
+
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning: 25 parsing failures.
+ row col  expected    actual                                                     file
+1270  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1271  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1272  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1273  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1274  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+.... ... ......... ......... ........................................................
+See problems(...) for more details.
+
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning: 29 parsing failures.
+ row col  expected    actual                                                     file
+1304  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1305  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1306  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1307  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1308  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+.... ... ......... ......... ........................................................
+See problems(...) for more details.
+
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning: 27 parsing failures.
+ row col  expected    actual                                                     file
+1307  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1308  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1309  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1310  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1311  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+.... ... ......... ......... ........................................................
+See problems(...) for more details.
+
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning: 38 parsing failures.
+ row col  expected    actual                                                     file
+1320  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1321  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1322  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1323  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1324  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+.... ... ......... ......... ........................................................
+See problems(...) for more details.
+
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning: 45 parsing failures.
+ row col  expected    actual                                                     file
+1325  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1326  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1327  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1328  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1329  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+.... ... ......... ......... ........................................................
+See problems(...) for more details.
+
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning: 34 parsing failures.
+ row col  expected    actual                                                     file
+1330  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1331  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1332  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1333  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1334  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+.... ... ......... ......... ........................................................
+See problems(...) for more details.
+
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning: 39 parsing failures.
+ row col  expected    actual                                                     file
+1348  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1349  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1350  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1351  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1352  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+.... ... ......... ......... ........................................................
+See problems(...) for more details.
+
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Error in open.connection(x, "rb") : HTTP error 500.
+Calls: %>% ... html_table -> html_element -> read_html -> read_html.default
+Execution halted
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning: 20 parsing failures.
+ row col  expected    actual                                                     file
+1351  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1352  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1353  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1354  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1355  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+.... ... ......... ......... ........................................................
+See problems(...) for more details.
+
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning: 28 parsing failures.
+ row col  expected    actual                                                     file
+1372  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1373  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1374  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1375  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+1376  -- 8 columns 5 columns 'E:/School/R Work/ICBarTweeter/Data/police_activity.csv'
+.... ... ......... ......... ........................................................
+See problems(...) for more details.
+
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Error in open.connection(x, "rb") : HTTP error 500.
+Calls: %>% ... html_table -> html_element -> read_html -> read_html.default
+Execution halted
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 
+Loading Packages...
+Scraping Charges...
+Scraping Activity...
+Warning message:
+One or more parsing issues, see `problems()` for details 

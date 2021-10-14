@@ -1,0 +1,46 @@
+---
+title: "Untitled"
+author: "Andrew Couch"
+date: "6/11/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(lubridate)
+library(here)
+
+charge <- read_csv(here("Data/charge_history.csv"))
+police <- read_csv(here("Data/police_activity.csv"))
+```
+
+```{r}
+charge %>% 
+  select(charges) %>% 
+  separate_rows(charges, sep = ";") %>% 
+  mutate(charges = str_trim(charges) %>% str_squish()) %>% 
+  distinct() %>% 
+  arrange(charges)
+```
+
+
+```{r}
+charge %>% 
+  select(name, charges, location, offense_date) %>% 
+  separate_rows(charges, sep = ";") %>% 
+  mutate(offense_date = parse_date_time(offense_date, "%m/%d/%Y %h:%m%s %p"),
+         charges = str_trim(charges) %>% str_squish()) %>% 
+  filter(str_detect(charges, "In a Bar After 10 pm While Underage|MISUSE OF LICENSE OR ID CARD TO ACQUIRE ALCOHOL|License-possess ficticious DL/ID|PAULA|Presence on premise (licensed liquor establishment)after hours|Provide False Identity Info to Law Enforcement|Unlawful use of authentic DL/ID of another")) %>% 
+  mutate(offense_date = wday(offense_date, label = T)) %>% 
+  count(charges, offense_date) %>% 
+  ggplot(aes(x = offense_date, y = n, color = charges, group = charges)) + 
+  geom_line() + 
+  geom_point() + 
+  coord_polar() 
+
+```
+

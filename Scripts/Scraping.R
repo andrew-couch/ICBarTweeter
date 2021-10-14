@@ -1,0 +1,49 @@
+message("Loading Packages...")
+# Load Packages
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(rvest)
+})
+
+
+# Helper function to look into detail of arrest and extract date of birth, was arrested, and officer name
+get_detail <- function(link){
+  
+  link <- read_html(link)
+  
+  tibble(dob = link %>% html_element("dd:nth-child(6)") %>% html_text(),
+         jailed = link %>% html_element("dd:nth-child(8)") %>% html_text(),
+         officer = link %>% html_element("dd:nth-child(14)") %>% html_text())
+  
+} 
+
+message("Scraping Charges...")
+# Scrape arrests/charges and append to a table for future analysis
+read_html("https://www.iowa-city.org/IcgovApps/Police/ArrestBlotter") %>% 
+  html_element("table") %>% 
+  html_table() %>% 
+  rename_all(~tolower(.x) %>% str_replace_all(" ", "_")) %>% 
+  bind_cols(tibble(details = read_html("https://www.iowa-city.org/IcgovApps/Police/ArrestBlotter") %>% 
+                     html_elements(".body-content a") %>% 
+                     html_attr("href"))) %>% 
+  mutate(details = paste0("https://www.iowa-city.org", details),
+         details = map(details, get_detail)) %>% 
+  unnest(details) %>% 
+  write_csv("E:/School/R Work/ICBarTweeter/Data/charge_history.csv", append = TRUE)
+
+message("Scraping Activity...")
+# Scrape overall activity and append to a table for future analysis
+read_html("https://www.iowa-city.org/IcgovApps/police/activitylog") %>% 
+  html_element("table") %>% 
+  html_table() %>% 
+  rename_all(~tolower(.x) %>% str_replace(" ", "_")) %>% 
+  write_csv("E:/School/R Work/ICBarTweeter/Data/police_activity.csv", append = TRUE)
+
+suppressMessages({
+  charge_hist <- read_csv("E:/School/R Work/ICBarTweeter/Data/charge_history.csv") %>% distinct()
+  police_activity <- read_csv("E:/School/R Work/ICBarTweeter/Data/police_activity.csv") %>% distinct()
+  write_csv(charge_hist, "E:/School/R Work/ICBarTweeter/Data/police_activity.csv")
+  write_csv(police_activity, "E:/School/R Work/ICBarTweeter/Data/police_activity.csv")
+})
+
+write_csv(charge_hist, "E:/School/R Work/ICBarTweeter/Data/police_activity.csv")
