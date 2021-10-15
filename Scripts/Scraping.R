@@ -29,7 +29,7 @@ read_html("https://www.iowa-city.org/IcgovApps/Police/ArrestBlotter") %>%
          details = map(details, get_detail)) %>% 
   unnest(details) %>% 
   mutate(offense_date = lubridate::parse_date_time(offense_date, "%m/%d/%Y %h:%m:%s %p")) %>% 
-  write_csv("E:/School/R Work/ICBarTweeter/Data/charge_history.csv", append = TRUE)
+  write_csv("Data/charge_history.csv", append = TRUE)
 
 message("Scraping Activity...")
 # Scrape overall activity and append to a table for future analysis
@@ -38,19 +38,19 @@ read_html("https://www.iowa-city.org/IcgovApps/police/activitylog") %>%
   html_table() %>% 
   rename_all(~tolower(.x) %>% str_replace(" ", "_")) %>% 
   mutate(offense_date = lubridate::parse_date_time(offense_date, "%m/%d/%Y %h:%m:%s %p")) %>% 
-  write_csv("E:/School/R Work/ICBarTweeter/Data/police_activity.csv", append = TRUE)
+  write_csv("Data/police_activity.csv", append = TRUE)
 
 suppressMessages({
-  charge_hist <- read_csv("E:/School/R Work/ICBarTweeter/Data/charge_history.csv") %>% 
+  charge_hist <- read_csv("Data/charge_history.csv") %>% 
     distinct() %>% 
     mutate(offense_date = lubridate::parse_date_time(offense_date, "%m/%d/%Y %h:%m:%s %p")) %>% 
     arrange(offense_date)
   
-  police_activity <- read_csv("E:/School/R Work/ICBarTweeter/Data/police_activity.csv") %>% 
+  police_activity <- read_csv("Data/police_activity.csv") %>% 
     distinct() %>% 
     mutate(offense_date = lubridate::parse_date_time(offense_date, "%m/%d/%Y %h:%m:%s %p"))  %>% 
     arrange(offense_date)
   
-  write_csv(charge_hist, "E:/School/R Work/ICBarTweeter/Data/police_activity.csv")
-  write_csv(police_activity, "E:/School/R Work/ICBarTweeter/Data/police_activity.csv")
+  write_csv(charge_hist, "Data/police_activity.csv")
+  write_csv(police_activity, "Data/police_activity.csv")
 })

@@ -1,41 +1,25 @@
+# Scrape daily
+name: Scrape
+
 on:
   schedule:
     - cron: "0 14 * * *"
 
 jobs:
-  generate-data:
-    runs-on: ${{ matrix.config.os }}
-
-    name: ${{ matrix.config.os }} (${{ matrix.config.r }})
-
-    strategy:
-      fail-fast: false
-      matrix:
-        config:
-          - {os: ubuntu-latest,   r: 'release'}
-
-    env:
-      R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
-      RSPM: ${{ matrix.config.rspm }}
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+  scrape:
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-
+      - uses: actions/checkout@master
       - uses: r-lib/actions/setup-r@master
-        with:
-          r-version: ${{ matrix.config.r }}
-          http-user-agent: ${{ matrix.config.http-user-agent }}
 
-      - uses: r-lib/actions/setup-pandoc@master
-
-      - name: Query dependencies
+      - name: Install Packages
         run: |
-          install.packages('tidyverse')
-          install.packages('rvest')
+          R -e 'install.packages("tidyverse")'
+          R -e 'install.packages("rvest")'
         shell: Rscript {0}
-
-      - name: Generate data
+      
+      - name: Run Scripts
         run: |
           source("Scripts/Scraping.R")
         shell: Rscript {0} 
