@@ -17,12 +17,9 @@ jobs:
         run: |
           R -e 'install.packages("tidyverse")'
           R -e 'install.packages("rvest")'
-        shell: Rscript {0}
       
       - name: Run Scripts
-        run: |
-          source("Scripts/Scraping.R")
-        shell: Rscript {0} 
+        run: Rscript Scraping.R
         
       # Add new files in data folder, commit along with other modified files, push
       - name: Commit files
