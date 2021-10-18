@@ -19,7 +19,7 @@ jobs:
           R -e 'install.packages("rvest")'
       
       - name: Run Scripts
-        run: Rscript Scraping.R
+        run: Rscript Scripts/Scraping.R
         
       # Add new files in data folder, commit along with other modified files, push
       - name: Commit files

@@ -3,7 +3,6 @@ message("Loading Packages...")
 suppressPackageStartupMessages({
   library(tidyverse)
   library(rvest)
-  library(hms)
 })
 
 # Helper function to look into detail of arrest and extract date of birth, was arrested, and officer name
@@ -29,7 +28,6 @@ read_html("https://www.iowa-city.org/IcgovApps/Police/ArrestBlotter") %>%
   mutate(details = paste0("https://www.iowa-city.org", details),
          details = map(details, get_detail)) %>% 
   unnest(details) %>% 
-  mutate(offense_date = parse_hms(offense_date, "%m/%d/%Y %h:%m:%s %p")) %>% 
   write_csv("Data/charge_history.csv", append = TRUE)
 
 message("Scraping Activity...")
@@ -43,12 +41,10 @@ read_html("https://www.iowa-city.org/IcgovApps/police/activitylog") %>%
 suppressMessages({
   charge_hist <- read_csv("Data/charge_history.csv") %>% 
     distinct() %>% 
-    mutate(offense_date = parse_hms(offense_date, "%m/%d/%Y %h:%m:%s %p")) %>% 
     arrange(offense_date)
   
   police_activity <- read_csv("Data/police_activity.csv") %>% 
     distinct() %>% 
-    mutate(offense_date = parse_hms(offense_date, "%m/%d/%Y %h:%m:%s %p"))  %>% 
     arrange(offense_date)
   
   write_csv(charge_hist, "Data/police_activity.csv")
