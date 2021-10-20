@@ -1,4 +1,8 @@
 case_number,offense_date,name,location,charges,dob,jailed,officer
+21156861,123 S Linn St,TR/PARKING,COMPLETED,Y,NA,NA,NA
+21156928,1504 Tracy Ln,Z Pregnancy/Childbirth/Miscarriage,COMPLETED,Y,NA,NA,NA
+21156923,201 S Clinton St,ALARM/PANIC/HOLDUP,UNK CAUSE ALARM,Y,NA,NA,NA
+21156931,201 S Clinton St,ALARM/BURGLARY,UNK CAUSE ALARM,Y,NA,NA,NA
 2021000379,2021-01-17T17:44:00Z,"GERMAN, ANGELINA JOLI",200 E PARK RD,Possess Controlled Substance -  Marijuana,NA,NA,NA
 2021000380,2021-01-17T18:21:00Z,"LEE, JAMES NOBLE",100 E COURT ST,Driving while license revoked; Drive while license under suspension/cancelled,NA,NA,NA
 2021000398,2021-01-18T18:21:00Z,"BARNES, JIMMY JOHN",1100 ARTHUR ST  P4,Assault- Domestic Abuse,6/30/1975,Y,Bratek
@@ -550,7 +554,7 @@ case_number,offense_date,name,location,charges,dob,jailed,officer
 2021002105,2021-03-26T23:22:00Z,"VEGA, JAMES JEREMY",NB DUBUQUE/RONALDS,Driving Under Suspension No SR-22; Drive while license under suspension/cancelled,NA,NA,NA
 2021002107,2021-03-27T00:14:00Z,"JOHNSON, CHARLES DESHAUN",IOWA/DUBUQUE,Drive while license under suspension/cancelled,11/8/1998,N,Bratek
 2021002110,2021-03-27T03:12:00Z,"TOWBRIDGE, JORDAN LYNN",BENTON STREET/CAPITOL STREET,OWI,2/26/2000,Y,REINHARD
-2021002117,2021-03-27T11:42:00Z,"HIRVELA,DAVID ROBERT",NATURAL GROCERS 1404 S GILBERT ST,Theft 5th Degree,2/29/1968,Y,HARTMAN
+2021002117,2021-03-27T11:42:00Z,"HIRVELA,DAVID ROBERT","NATURAL GROCERS 1404 S GILBERT ST",Theft 5th Degree,2/29/1968,Y,HARTMAN
 2021002123,2021-03-27T15:50:00Z,"KING, AURELIUS BASTIAN",SOUTHGATE AVE/WATERFRONT DR,Public Intoxication; Assault Causing Injury,10/22/1979,Y,Sandifer
 2021002123,2021-03-27T15:50:00Z,"KING, AURELIUS BASTIAN",SOUTHGATE AVE/WATERFRONT DR,Public Intoxication; Assault Causing Injury,NA,NA,NA
 2021002125,2021-03-27T16:51:00Z,"FREEMAN, DEVON TYRONE",2303 MUSCATINE AVE,Possess Controlled Substance -  Marijuana,10/29/1991,Y,Puente
@@ -1496,7 +1500,7 @@ case_number,offense_date,name,location,charges,dob,jailed,officer
 2021005232,2021-07-24T21:18:00Z,"BOLDEN, KA'LECK TRAVONNIOUS",1100 ARTHUR ST,Possess firearms as a felon,NA,NA,NA
 2021005257,2021-07-24T23:00:00Z,"HARRIS, TOM HENRY",228 STEVENS DR,Trespass - Criminal trespass,1/23/1989,N,Friedrich
 2021005257,2021-07-24T23:00:00Z,"HARRIS, TOM HENRY",228 STEVENS DR,Trespass - Criminal trespass,NA,NA,NA
-2021005233,2021-07-25T00:09:00Z,"ROBERTS, ANDRE RAYSHAUN",100 S DUBUQUE ST,"1)	Use of a dangerous weapon in the commission of a crime; Intimidation with a dangerous weapon; Murder- Attempted Murder; 2)	Persons ineligible to carry dangerous weapons",12/11/2001,N,HARDING
+2021005233,2021-07-25T00:09:00Z,"ROBERTS, ANDRE RAYSHAUN",100 S DUBUQUE ST,1)	Use of a dangerous weapon in the commission of a crime; Intimidation with a dangerous weapon; Murder- Attempted Murder; 2)	Persons ineligible to carry dangerous weapons,12/11/2001,N,HARDING
 2021005234,2021-07-25T02:01:00Z,"RUIZ, YESENIA",1859 LOWER MUSCATINE RD,OWI- 2nd Offense,2/18/1996,Y,REINHARD
 2021005238,2021-07-25T03:26:00Z,"JOHNSON, ALAJUWON SHAMAR",2422 LAKESIDE DR  APT 3,Assault With Intent To Inflict Serious I; Harassment 3rd Degree,12/26/1983,Y,MURPHY
 2021005237,2021-07-25T04:09:00Z,"PINEDA ARGUETA, NELSON DANILO",DODGE ST/ BURLINGTON ST,Eluding - Eluding pursuing law enforcement,4/15/1999,Y,GRIMM
@@ -1732,7 +1736,7 @@ case_number,offense_date,name,location,charges,dob,jailed,officer
 2021005941,2021-08-21T03:05:00Z,"CLARK, KYLE ROBERT",622 E. COLLEGE ST,Possess Controlled Substance -  Marijuana; Drug Tax stamp violation-Iowa,10/5/2001,Y,LAKOSE
 2021005949,2021-08-21T16:28:00Z,"TARVIN,ETHAN DANIEL",STATE 1/GOVERNOR ST,Allow person to drive while revoked,10/7/2000,Y,York
 2021005953,2021-08-21T20:42:00Z,"PRECIADO, MIGUEL HERRERA",HWY 6/BOYRUM,Drive while license under suspension/cancelled,11/27/1994,N,Herman
-2021005954,2021-08-21T23:32:00Z,"STACY, TRAYVON MICHAEL",100 BLK COLLEGE STREET,"Possess alcohol under legal age (PAULA); Public Intoxication; 2)	Persons ineligible to carry dangerous weapons; Possession or carrying of dangerous weapon while under the influence of an alcoholic beverage or drugs",7/10/2001,Y,Herman
+2021005954,2021-08-21T23:32:00Z,"STACY, TRAYVON MICHAEL",100 BLK COLLEGE STREET,Possess alcohol under legal age (PAULA); Public Intoxication; 2)	Persons ineligible to carry dangerous weapons; Possession or carrying of dangerous weapon while under the influence of an alcoholic beverage or drugs,7/10/2001,Y,Herman
 2021005954,2021-08-21T23:32:00Z,"STACY,TRAYVON MICHAEL",100 BLK COLLEGE STREET,INTERFERENCE WITH OFFICIAL ACTS-FIREARM ; Possess Controlled Substance -  Marijuana,7/10/2001,Y,Herman
 2021005963,2021-08-22T00:00:00Z,"FORD, MARLA LEE",1039 SCOTT PARK DR,Assault- Domestic Abuse,5/27/1994,Y,MURGUIA
 2021005956,2021-08-22T00:47:00Z,"LAVASTIDA, BENJAMIN CARLOS",CLINTON ST/JEFFERSON ST,License-possess ficticious DL/ID; OWI,9/24/2001,Y,REINHARD
@@ -1744,7 +1748,7 @@ case_number,offense_date,name,location,charges,dob,jailed,officer
 2021005975,2021-08-22T16:35:00Z,"CUMMINGS, CHRISTOPHER A",433 S VAN BUREN ST,"Violate no-contact, domestic abuse protective order",12/14/1988,Y,HARKRIDER
 2021005977,2021-08-22T17:21:00Z,"NEUZIL, CHRISTOPHER JOHN",US 218,Drive while license under suspension/cancelled,12/24/1958,N,York
 2021005979,2021-08-22T17:28:00Z,"ADAMS,MARCUS KOHL",BROADWAY ST/ HIWHWAY 6,Possession Of Controlled Substance 3rd or Subsequent,11/29/1987,Y,Sandifer
-2021005981,2021-08-22T19:41:00Z,"ROBINSON,TRAMON COLANDRO",504 E BURLINGTON ST,"2)	Persons ineligible to carry dangerous weapons",11/3/1998,Y,BUNCH
+2021005981,2021-08-22T19:41:00Z,"ROBINSON,TRAMON COLANDRO",504 E BURLINGTON ST,2)	Persons ineligible to carry dangerous weapons,11/3/1998,Y,BUNCH
 2021005981,2021-08-22T19:41:00Z,"ROBINSON,TRAMON COLANDRO",504 E BURLINGTON ST,OWI; Possession or carrying of dangerous weapon while under the influence of an alcoholic beverage or drugs,11/3/1998,Y,Reinhard
 2021005983,2021-08-22T22:26:00Z,"ANDERSON, DONALD BRADLEY",TAYLOR DR/HIGHWAY 6,DOMINION/CONTROL OF FIREARM/OFFENSIVE WEAPON BY FELON; Possession or carrying of dangerous weapon while under the influence of an alcoholic beverage or drugs,6/12/1986,Y,Sandifer
 2021005960,2021-08-23T11:41:00Z,"BIRTLES,MICHAEL JAMES",MAKET/ EVANS ST,Public Intoxication,8/23/2003,Y,DAVIS
@@ -1799,7 +1803,7 @@ case_number,offense_date,name,location,charges,dob,jailed,officer
 2021006160,2021-08-29T01:10:00Z,"HUNTER, ROGER EUGENE",323 E BURLINGTON,Possession Of Drug Paraphernalia,3/1/1972,Y,Kohlmeyer
 2021006164,2021-08-29T01:58:00Z,"KOTULA,RAYMOND MICHAEL",MARKET AND DUBUQUE,OWI; License-possess ficticious DL/ID,6/29/2001,Y,GRIMM
 2021006165,2021-08-29T02:05:00Z,"RUSSELL, TY JACKSON",DUBUQUE STREET/MARKET STREET,License-possess ficticious DL/ID; OWI,9/23/2000,Y,REINHARD
-2021006166,2021-08-29T03:39:00Z,"BAKER, JADA AMARI",10 BLOCK 2ND STREET,"2)	Persons ineligible to carry dangerous weapons; Possess Controlled Substance -  Marijuana",12/11/1999,Y,REINHARD
+2021006166,2021-08-29T03:39:00Z,"BAKER, JADA AMARI",10 BLOCK 2ND STREET,2)	Persons ineligible to carry dangerous weapons; Possess Controlled Substance -  Marijuana,12/11/1999,Y,REINHARD
 2021006173,2021-08-29T15:55:00Z,"VANOURNEY, ADAM JASON",919 HIGHWAY 1 WEST,Interference - Interference with official acts; Theft 5th Degree,6/3/1988,Y,York
 2021006175,2021-08-29T16:27:00Z,"STOCKER, DAKOTA MICHAEL",1ST AVE/MALL DR,Possession of Controlled Substance- 2nd Offense,3/28/1993,Y,Bratek
 2021006180,2021-08-29T20:10:00Z,"WILLIAMS,LANNY DWAYNE",913 WILLOW ST,"Violate no-contact, domestic abuse protective order",3/10/1957,Y,Puente
@@ -1871,7 +1875,7 @@ case_number,offense_date,name,location,charges,dob,jailed,officer
 2021006421,2021-09-06T23:15:00Z,"CHELMOWSKI,ANDREW JAMES",2401 HWY 6 E,Public Intoxication; Interference - Interference with official acts,11/16/1997,Y,Puente
 2021006422,2021-09-06T23:59:00Z,"HORSTMAN, MICHAEL G",BURLINGTON ST/MADISON ST,Possession Of Drug Paraphernalia; License-possess ficticious DL/ID; Possess Controlled Substance -  Marijuana,4/13/2002,Y,Reinhard
 2021006425,2021-09-07T01:28:00Z,"LINKLATER,EVA LYNN",HIGHWAY 6/ KEOKUK ST,Possess Controlled Substance -  Marijuana; Possession or carrying of dangerous weapon while under the influence of an alcoholic beverage or drugs,6/22/1999,Y,Sandifer
-2021006425,2021-09-07T01:28:00Z,"CLARK,TANEIKA MONAY",HWY 6 / KEOKUK ST,"2)	Persons ineligible to carry dangerous weapons; Possess Controlled Substance -  Marijuana",4/11/1993,Y,Puente
+2021006425,2021-09-07T01:28:00Z,"CLARK,TANEIKA MONAY",HWY 6 / KEOKUK ST,2)	Persons ineligible to carry dangerous weapons; Possess Controlled Substance -  Marijuana,4/11/1993,Y,Puente
 2021006428,2021-09-07T10:45:00Z,"LAVELA, AMOS GOTOE",225 S LINN ST,Trespass - Criminal trespass,1/10/1995,N,MILLARD
 2021006447,2021-09-07T21:00:00Z,"RITENOUR, KODIE DAVID",80/246W,Possession Of Drug Paraphernalia,7/11/1992,N,Kohlmeyer
 2021006449,2021-09-07T23:00:00Z,"SCOTT, FRANK JO",HWY 6/ GILBERT ST,Interference - Interference with official acts; Possess Controlled Substance -  Marijuana; Possess Controlled Substance - Cocaine,6/29/1971,Y,Kohlmeyer
@@ -1887,7 +1891,7 @@ case_number,offense_date,name,location,charges,dob,jailed,officer
 2021006506,2021-09-10T02:50:00Z,"JONES, WILLIAM",310 SCOTT CT,Public Intoxication,11/18/1984,N,DAVIS
 2021006508,2021-09-10T04:05:00Z,"KOCH, EVAN JOSEPH",325 3 COLLEGE ST APT 1623,Public Intoxication; Interference - Interference w/official acts causing/ intending injury; Trespass - Criminal trespass; Criminal Mischief 4th Degree,7/31/2002,Y,MITCHELL
 2021006525,2021-09-10T19:20:00Z,"MCGILL, ROBERT LEE",1861 LOWER MUSCATINE RD,Possession Of Controlled Substance 3rd or Subsequent,6/10/1983,Y,Bratek
-2021006531,2021-09-10T20:12:00Z,JUVENILE,500 E MARKET ST,"2)	Persons ineligible to carry dangerous weapons; Assault While Displaying A Dangerous Weapon",1/1/0001,N,BUNCH
+2021006531,2021-09-10T20:12:00Z,JUVENILE,500 E MARKET ST,2)	Persons ineligible to carry dangerous weapons; Assault While Displaying A Dangerous Weapon,1/1/0001,N,BUNCH
 2021006531,2021-09-10T20:12:00Z,JUVENILE,500 E MARKET ST,Assault -simple,1/1/0001,N,BUNCH
 2021006530,2021-09-10T20:49:00Z,JUVENILE,2200 BLK OF TAYLOR DR,Theft 2nd Degree; Driving while license revoked; Interference - Interference with official acts,1/1/0001,Y,Boesen
 2021006530,2021-09-10T21:00:00Z,JUVENILE,SUNDAUSKY/TAYLOR,Disorderly Conduct; Interference - Interference with official acts,1/1/0001,N,Bratek
@@ -1906,7 +1910,7 @@ case_number,offense_date,name,location,charges,dob,jailed,officer
 2021006569,2021-09-11T23:20:00Z,"BEAM, TERRELL ANTHONY",2724 WAYNE AVE,Public Intoxication; Interference - Interference with official acts,2/25/1997,Y,Herman
 2021006569,2021-09-11T23:35:00Z,"JOHNSON, LARON WILLIAM",2724 WAYNE AVE,Assault Causing Injury,9/21/2001,Y,LAKOSE
 2021006569,2021-09-11T23:35:00Z,"JOHNSON,LARON WILLIAM",2724 WAYNE AVE,Assault Causing Injury,9/21/2001,Y,LAKOSE
-2021006570,2021-09-11T23:51:00Z,"FIGUEROA, MICHAEL RUBEN",HIGHWAY 218 @ MM 89 NB,"Possession or carrying of dangerous weapon while under the influence of an alcoholic beverage or drugs ; 2)	Persons ineligible to carry dangerous weapons; OWI- 2nd Offense",8/23/1991,Y,Reinhard
+2021006570,2021-09-11T23:51:00Z,"FIGUEROA, MICHAEL RUBEN",HIGHWAY 218 @ MM 89 NB,Possession or carrying of dangerous weapon while under the influence of an alcoholic beverage or drugs ; 2)	Persons ineligible to carry dangerous weapons; OWI- 2nd Offense,8/23/1991,Y,Reinhard
 2021006571,2021-09-12T00:35:00Z,"COLLINS, KEITH MARKS",118 S DUBUQUE ST,Possess open container alcohol in public; Public Intoxication,10/18/1971,Y,Puente
 2021006575,2021-09-12T00:55:00Z,"CAMPBELL, ALEZZANDRO ANDRES",400 BOWERY ST,Eluding - Eluding pursuing law enforcement; Interference - Interference with official acts; Possess Controlled Substance -  Marijuana; Drive while license under suspension/cancelled,2/7/1995,Y,LAKOSE
 2021006572,2021-09-12T01:10:00Z,"DEHN-VAZQUEZ, SAMUEL TOMAS",100 E COLLEGE ST,Public Intoxication,7/21/1997,Y,FARRELL
@@ -2034,7 +2038,7 @@ case_number,offense_date,name,location,charges,dob,jailed,officer
 2021006986,2021-09-25T17:36:00Z,"STREITZ, KARL GURNETT",100 E COLLEGE ST,Interference - Interference with official acts,5/21/2001,Y,Sandifer
 2021006996,2021-09-25T20:20:00Z,"KRAMER, JACOB NICHOLAS",108 E COLLEGE ST,Unlawful use of ID; Possess alcohol under legal age (PAULA),9/8/2001,N,Herman
 2021006994,2021-09-25T20:25:00Z,"SACKETT, JOHN LOGSDEN",CLINTON ST/WASHINGTON ST,Possess open container alcohol in public,8/20/1987,N,Sandifer
-2021006998,2021-09-25T21:43:00Z,"POLK, AMARIE MAREASE",S SUMMIT ST/WALNUT ST,"2)	Persons ineligible to carry dangerous weapons; Possess Controlled Substance -  Marijuana; Provide False Identity Info to Law Enforcement; Possession of Contraband In Correctional Institution",2/23/2002,Y,Boesen
+2021006998,2021-09-25T21:43:00Z,"POLK, AMARIE MAREASE",S SUMMIT ST/WALNUT ST,2)	Persons ineligible to carry dangerous weapons; Possess Controlled Substance -  Marijuana; Provide False Identity Info to Law Enforcement; Possession of Contraband In Correctional Institution,2/23/2002,Y,Boesen
 2021007001,2021-09-25T22:52:00Z,"ESPARZA, LEAH M",211 E IOWA AVE,License-possess ficticious DL/ID; Public Intoxication,11/20/2002,Y,Herman
 2021007002,2021-09-25T23:06:00Z,"FRENCH, ANTWON",2701 BRADFORD DR,Criminal Mischief 5th Degree,7/13/2003,Y,Kuntz
 2021007003,2021-09-26T00:01:00Z,"LAMBERT, TYLER JAMES",S MADISON ST/E IOWA AVE,Public Urination,4/9/2003,N,Schultz
@@ -2159,7 +2163,7 @@ case_number,offense_date,name,location,charges,dob,jailed,officer
 2021007327,2021-10-06T15:49:00Z,"BACHMAN, JORDEN MARIE",508 S DUBUQUE ST,Drive while license under suspension/cancelled,4/11/2004,N,SCHNACKEL
 2021007366,2021-10-07T00:00:00Z,"HANSON, ZACHARY TODD",DUBUQUE ST/WASHINGTON ST,Possess alcohol under legal age (PAULA),8/18/2003,N,Kohlmeyer
 2021007339,2021-10-07T01:08:00Z,"HANSEN, TONY EUGENE",100 W BENTON STREET,OWI- 3rd and Subsequent; Drive while barred; Drive while license under suspension/cancelled; Assault While Displaying A Dangerous Weapon,8/18/1963,Y,Reinhard
-2021007339,2021-10-07T01:08:00Z,"HANSEN, TONY EUGENE",100 W BENTON STREET,"Possession or carrying of dangerous weapon while under the influence of an alcoholic beverage or drugs ; 2)	Persons ineligible to carry dangerous weapons",8/18/1963,Y,Reinhard
+2021007339,2021-10-07T01:08:00Z,"HANSEN, TONY EUGENE",100 W BENTON STREET,Possession or carrying of dangerous weapon while under the influence of an alcoholic beverage or drugs ; 2)	Persons ineligible to carry dangerous weapons,8/18/1963,Y,Reinhard
 2021007341,2021-10-07T04:00:00Z,"WILLIAMS, NATHANIEL",923 E COLLEGE ST,Public Intoxication; Interference - Interference with official acts; Harassment 2nd Degree,7/4/1994,Y,Reinhard
 2021007346,2021-10-07T07:00:00Z,"ENTERKIN, JAMES GREGORY",457 WESTWINDS DRIVE,Assault- Domestic Abuse,1/24/1967,Y,Schultz
 2021007354,2021-10-07T13:56:00Z,"URQUIZA DURAN, CRISTOBAL",GOVERNOR ST/COLLEGE ST,OWI,11/13/1981,Y,STRICKER
@@ -2255,3 +2259,27 @@ case_number,offense_date,name,location,charges,dob,jailed,officer
 2021007558,2021-10-13T01:08:00Z,"VANROEKEL,GRACIE JEAN",22 S CLINTON ST,Persons under legal age in licensed establishment-1st,5/19/2002,N,FJELSTUL
 2021007559,2021-10-13T01:12:00Z,"STUECKER,NICHOLAS ROBERT",10 S CLINTON ST,Public Intoxication; Interference - Interference with official acts; Persons under legal age in licensed establishment-1st ; Unlawful use of ID,1/16/2002,Y,FJELSTUL
 2021000569,2021-12-02T12:00:00Z,"COLLINS, ARIONNE NICOLE",919 HWY 1 W,Theft 2nd Degree,10/6/2001,Y,FOWLER
+21156868,211 E Iowa Ave,911 HANGUP,COMPLETED,Y,NA,NA,NA
+21156887,2127 Kountry Ln,DIST/DOMESTIC,INCIDENT REPORT TAKEN,Y,NA,NA,NA
+21156901,22 S Van Buren St,OUT WITH SUBJ,COMPLETED,N,NA,NA,NA
+21156889,2302 Catskill Ct,911 HANGUP,COMPLETED,Y,NA,NA,NA
+21156850,2401 HWY 6 E,PAPER SERVICE/WARRANT,WARRANT ARREST OTHER AGENCY,Y,NA,NA,NA
+21156866,2426 Aster Ave,UNKNOWN PROBLEM,INCIDENT REPORT TAKEN,Y,NA,NA,NA
+21156863,2601 Lakeside Dr,BURGLARY/VEHICLE,UNABLE TO LOCATE,N,NA,NA,NA
+21156872,2718 Wayne AVE,DIST/DOMESTIC,INCIDENT REPORT TAKEN,Y,NA,NA,NA
+21156851,3 Hwy 1 W,TR/MOTORIST ASSIST,COMPLETED,Y,NA,NA,NA
+21156869,323 E BURLINGTON ST,PUBLIC ASSIST,INCIDENT REPORT TAKEN,Y,NA,NA,NA
+21156920,410 E WASHINGTON ST,OUT FOR INVEST/FOLLOW UP,COMPLETED,N,NA,NA,NA
+21156915,443 S Johnson St,DIST/NOISE GENERAL,UNABLE TO CONTACT,Y,NA,NA,NA
+21156914,80/244wb,TRAFFIC STOP,WARNING ISSUED VERBAL,Y,NA,NA,NA
+21156912,80/247eb,TRAFFIC STOP,WARNING ISSUED VERBAL,N,NA,NA,NA
+21156871,812 S 1st AVE,TR/RECKLESS DRIVER,BROADCAST,Y,NA,NA,NA
+21156918,838 Sugar Loaf Cir,SUSPICIOUS/ACT/PERS/VEH,CANCEL BY COMPL,Y,NA,NA,NA
+21156919,838 Sugar Loaf Cir,ALARM/BURGLARY,UNK CAUSE ALARM,Y,NA,NA,NA
+21156885,E Burlington St/S Clinton St,OUT WITH SUBJ,WARNING ISSUED VERBAL,N,NA,NA,NA
+21156881,E Burlington St/S Linn St,OUT WITH SUBJ,WARNING ISSUED VERBAL,N,NA,NA,NA
+21156892,E Burlington St/S Linn St,TRAFFIC STOP,WARNING ISSUED VERBAL,N,NA,NA,NA
+21156906,E Jefferson St/N Linn St,TRAFFIC STOP,WARNING ISSUED VERBAL,N,NA,NA,NA
+21156917,Hwy 6 W/Valley Ave,OUT WITH SUBJ,WARNING ISSUED VERBAL,N,NA,NA,NA
+21156847,W Burlington St/S Riverside Dr,TRAFFIC STOP,ARREST MADE,Y,NA,NA,NA
+21156854,W Burlington St/S Riverside Dr,TRAFFIC STOP,WARNING ISSUED VERBAL,N,NA,NA,NA
