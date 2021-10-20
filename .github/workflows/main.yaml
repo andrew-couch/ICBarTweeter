@@ -17,6 +17,7 @@ jobs:
         run: |
           R -e 'install.packages("tidyverse")'
           R -e 'install.packages("rvest")'
+          R -e 'install.packages("rtweet", dependencies = TRUE)'
       
       - name: Run Scripts
         run: Rscript Scripts/Scraping.R
@@ -31,4 +32,8 @@ jobs:
           git push origin main
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}
+          TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+          TWITTER_CONSUMER_API_SECRET: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
           username: github-actions
