@@ -32,7 +32,9 @@ read_html("https://www.iowa-city.org/IcgovApps/Police/ArrestBlotter") %>%
 
 
 suppressMessages({
-  charge_hist <- read_csv("Data/charge_history.csv") %>% 
+  charge_hist <- read_csv("Data/charge_history.csv") 
+  
+  charge_hist <- charge_hist %>% 
     distinct() %>% 
     arrange(offense_date)
   
