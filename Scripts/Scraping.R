@@ -30,13 +30,13 @@ read_html("https://www.iowa-city.org/IcgovApps/Police/ArrestBlotter") %>%
   unnest(details) %>% 
   write_csv("Data/charge_history.csv", append = TRUE)
 
+message("Scraping Activity...")
 read_html("https://www.iowa-city.org/IcgovApps/Police/ActivityLog") %>% 
   html_element(".body-content") %>% 
   html_table() %>% 
   rename_with(~tolower(.x) %>% str_replace_all(" ", "_")) %>% 
-  mutate(link = paste0("https://www.iowa-city.org/IcgovApps/Police/Details?dispatchNumber=", dispatch_number)) %>% 
-  # filter(activity == "BAR CHECK") %>% 
-  mutate(link = map(link, read_html),
+  mutate(link = paste0("https://www.iowa-city.org/IcgovApps/Police/Details?dispatchNumber=", dispatch_number),
+         link = map(link, read_html),
          dispatch_time = map_chr(link, ~html_element(.x, "dd:nth-child(4)") %>% html_text()),
          activity_medium = map_chr(link, ~html_element(.x, "dd:nth-child(8)") %>% html_text()),
          location = map_chr(link, ~html_element(.x, "dd:nth-child(12)") %>% html_text()),
@@ -46,6 +46,7 @@ read_html("https://www.iowa-city.org/IcgovApps/Police/ActivityLog") %>%
   mutate(date = as.Date(date, "%m/%d/%Y")) %>% 
   write_csv("Data/police_activity.csv", append = TRUE)
 
+message("Removing Duplicates...")
 suppressMessages({
   charge_hist <- read_csv("Data/charge_history.csv") 
   activity_hist <- read_csv("Data/police_activity.csv") 
@@ -58,6 +59,6 @@ suppressMessages({
     distinct() %>% 
     arrange(date)
   
-  write_csv(charge_hist, "Data/police_activity.csv")
+  write_csv(charge_hist, "Data/charge_history.csv")
   write_csv(activity_hist, "Data/police_activity.csv")
 })
