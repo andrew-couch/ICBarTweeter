@@ -2211,14 +2211,23 @@ case_number,offense_date,name,location,charges,dob,jailed,officer
 2021005617,8/8/2021 9:02:00 PM,"LAVELA, AMOS GOTOE",127 E IOWA AVE,Public Intoxication; Trespass - Criminal trespass,1/10/1995,Y,Herman
 2021005631,8/9/2021 10:00:00 AM,"LAVELA, AMOS GOTOE",22 S. CLINTON STREET,Trespass - Criminal trespass,1/10/1995,N,MILLARD
 2021006829,9/1/2021 12:00:00 PM,"BAKER,MICHAEL DUJUAIN JR",2426 ASTER AVE,Theft 3rd Degree; Unauthorized Use of Credit Card,4/17/1992,N,FJELSTUL
+2021006829,9/1/2021 12:00:00 PM,"BAKER,MICHAEL DUJUAIN JR",2426 ASTER AVE,Theft 3rd Degree; Unauthorized Use of Credit Card,NA,NA,NA
 2021006235,9/1/2021 2:21:00 AM,"O'BRIEN, WILLIAM LAWRENCE",200 S DUBUQUE ST,Disorderly Conduct; Assault Causing Injury,6/9/2002,Y,Reinhard
+2021006235,9/1/2021 2:21:00 AM,"O'BRIEN, WILLIAM LAWRENCE",200 S DUBUQUE ST,Disorderly Conduct; Assault Causing Injury,NA,NA,NA
 2021006235,9/1/2021 2:28:00 AM,"DONAHUE, RONAN PATRICK",200 S LINN ST,Public Intoxication,6/30/2000,Y,Herman
+2021006235,9/1/2021 2:28:00 AM,"DONAHUE, RONAN PATRICK",200 S LINN ST,Public Intoxication,NA,NA,NA
 2021006235,9/1/2021 2:36:00 AM,"O'BRIEN, WILLIAM LAWRENCE",200 S LINN ST,License-possess ficticious DL/ID; Interference - Interference with official acts; Public Intoxication,6/9/2002,Y,Reinhard
+2021006235,9/1/2021 2:36:00 AM,"O'BRIEN, WILLIAM LAWRENCE",200 S LINN ST,License-possess ficticious DL/ID; Interference - Interference with official acts; Public Intoxication,NA,NA,NA
 2021006237,9/1/2021 3:42:00 AM,"FLEMING, JAMAL RASHEED",802 WESTWINDS DR APT 6,Assault- Domestic Assault w/injury-serious or aggravated; Domestic Abuse Assault Impeding Flow Of Air/Blood,4/3/1989,Y,"FUCHS, KU"
+2021006237,9/1/2021 3:42:00 AM,"FLEMING, JAMAL RASHEED",802 WESTWINDS DR APT 6,Assault- Domestic Assault w/injury-serious or aggravated; Domestic Abuse Assault Impeding Flow Of Air/Blood,NA,NA,NA
 2021006249,9/1/2021 4:49:00 PM,"SHORT, JUSTIN LEROY",1100 ARTHUR ST,Possession Of Drug Paraphernalia; Possession or carrying of dangerous weapon while under the influence of an alcoholic beverage or drugs,12/22/1988,Y,McNamee
+2021006249,9/1/2021 4:49:00 PM,"SHORT, JUSTIN LEROY",1100 ARTHUR ST,Possession Of Drug Paraphernalia; Possession or carrying of dangerous weapon while under the influence of an alcoholic beverage or drugs,NA,NA,NA
 2021006252,9/1/2021 6:04:00 PM,"ROSSMAN,DANIEL ALLEN",KEPKUK ST AND CROSS PARK AVE,OWI- 3rd and Subsequent,11/13/1962,Y,Friedrich
+2021006252,9/1/2021 6:04:00 PM,"ROSSMAN,DANIEL ALLEN",KEPKUK ST AND CROSS PARK AVE,OWI- 3rd and Subsequent,NA,NA,NA
 2021006254,9/1/2021 6:25:00 PM,"BALL, TIANDRA",2410 MORMON TREK BLVD,Theft 5th Degree,9/14/2001,Y,Kuntz
+2021006254,9/1/2021 6:25:00 PM,"BALL, TIANDRA",2410 MORMON TREK BLVD,Theft 5th Degree,NA,NA,NA
 2021006256,9/1/2021 7:50:00 PM,"PEARSON, TERRY JON JR",2217 MUSCATINE AVE #7,Assault- Domestic Assault w/injury-serious or aggravated,7/2/1989,Y,Reinhard
+2021006256,9/1/2021 7:50:00 PM,"PEARSON, TERRY JON JR",2217 MUSCATINE AVE #7,Assault- Domestic Assault w/injury-serious or aggravated,NA,NA,NA
 2021006504,9/10/2021 1:00:00 AM,"GARCIA, LISETT CARMEN",BURLINGTON ST/ GILBERT ST,Open container of alcohol in vehicle,1/6/1997,N,GRIMM
 2021006533,9/10/2021 10:28:00 PM,"NEUZIL, CAMERON JOSEPH",323 E BURLINGTON ST,Assault -simple; Interference - Interference with official acts; Assault On Police/fire/emt Personnel,6/5/2003,Y,FARRELL
 2021006534,9/10/2021 10:59:00 PM,"YELVINGTON, MALIK SEVEN PEIRCE",DUBUQUE/WASHINGTON,Littering - Littering/Illegal Dumping; Assault On Police/fire/emt Personnel; Interference - Interference with official acts,2/21/2002,Y,Bratek
