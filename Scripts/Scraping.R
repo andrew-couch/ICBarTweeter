@@ -16,7 +16,7 @@ get_detail <- function(link){
   
 } 
 
-message("Scraping Charges...")
+message(paste0("Scraping Charges... ", format.POSIXct(as.POSIXct(Sys.time(), tz = "GMT"), tz = "America/Chicago", usetz = TRUE)))
 # Scrape arrests/charges and append to a table for future analysis
 read_html("https://www.iowa-city.org/IcgovApps/Police/ArrestBlotter") %>% 
   html_element("table") %>% 
@@ -30,7 +30,7 @@ read_html("https://www.iowa-city.org/IcgovApps/Police/ArrestBlotter") %>%
   unnest(details) %>% 
   write_csv("Data/charge_history.csv", append = TRUE)
 
-message("Scraping Activity...")
+message(paste0("Scraping Activity... ", format.POSIXct(as.POSIXct(Sys.time(), tz = "GMT"), tz = "America/Chicago", usetz = TRUE)))
 read_html("https://www.iowa-city.org/IcgovApps/Police/ActivityLog") %>% 
   html_element(".body-content") %>% 
   html_table() %>% 
