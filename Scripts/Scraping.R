@@ -1,10 +1,12 @@
+message(paste0("Starting Script ", format.POSIXct(as.POSIXct(Sys.time(), tz = "GMT"), tz = "America/Chicago", usetz = TRUE)))
 message("Loading Packages...")
 # Load Packages
 suppressPackageStartupMessages({
   library(tidyverse)
   library(rvest)
+  charge_hist <- read_csv("Data/charge_history.csv") 
+  activity_hist <- read_csv("Data/police_activity.csv") 
 })
-
 # Helper function to look into detail of arrest and extract date of birth, was arrested, and officer name
 get_detail <- function(link){
   
@@ -14,7 +16,7 @@ get_detail <- function(link){
          jailed = link %>% html_element("dd:nth-child(8)") %>% html_text(),
          officer = link %>% html_element("dd:nth-child(14)") %>% html_text())
   
-} 
+}
 
 message(paste0("Scraping Charges... ", format.POSIXct(as.POSIXct(Sys.time(), tz = "GMT"), tz = "America/Chicago", usetz = TRUE)))
 # Scrape arrests/charges and append to a table for future analysis
@@ -25,6 +27,7 @@ read_html("https://www.iowa-city.org/IcgovApps/Police/ArrestBlotter") %>%
   bind_cols(tibble(details = read_html("https://www.iowa-city.org/IcgovApps/Police/ArrestBlotter") %>% 
                      html_elements(".body-content a") %>% 
                      html_attr("href"))) %>% 
+  filter(!(case_number %in% charge_hist$case_number)) %>% 
   mutate(details = paste0("https://www.iowa-city.org", details),
          details = map(details, get_detail)) %>% 
   unnest(details) %>% 
@@ -35,6 +38,7 @@ read_html("https://www.iowa-city.org/IcgovApps/Police/ActivityLog") %>%
   html_element(".body-content") %>% 
   html_table() %>% 
   rename_with(~tolower(.x) %>% str_replace_all(" ", "_")) %>% 
+  filter(!(dispatch_number %in% activity_hist$dispatch_number)) %>% 
   mutate(link = paste0("https://www.iowa-city.org/IcgovApps/Police/Details?dispatchNumber=", dispatch_number),
          link = map(link, read_html),
          dispatch_time = map_chr(link, ~html_element(.x, "dd:nth-child(4)") %>% html_text()),
@@ -46,19 +50,4 @@ read_html("https://www.iowa-city.org/IcgovApps/Police/ActivityLog") %>%
   mutate(date = as.Date(date, "%m/%d/%Y")) %>% 
   write_csv("Data/police_activity.csv", append = TRUE)
 
-message("Removing Duplicates...")
-suppressMessages({
-  charge_hist <- read_csv("Data/charge_history.csv") 
-  activity_hist <- read_csv("Data/police_activity.csv") 
-  
-  charge_hist <- charge_hist %>% 
-    distinct() %>% 
-    arrange(offense_date)
-  
-  activity_hist <- activity_hist %>% 
-    distinct() %>% 
-    arrange(date)
-  
-  write_csv(charge_hist, "Data/charge_history.csv")
-  write_csv(activity_hist, "Data/police_activity.csv")
-})
+message(paste0("Script Finished:", format.POSIXct(as.POSIXct(Sys.time(), tz = "GMT"), tz = "America/Chicago", usetz = TRUE)))
