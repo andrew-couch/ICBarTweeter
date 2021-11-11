@@ -31,6 +31,8 @@ read_html("https://www.iowa-city.org/IcgovApps/Police/ArrestBlotter") %>%
   mutate(details = paste0("https://www.iowa-city.org", details),
          details = map(details, get_detail)) %>% 
   unnest(details) %>% 
+  separate(offense_date, c("date", "time"), sep = " ", extra = "merge") %>% 
+  mutate(date = as.Date(date, "%m/%d/%Y")) %>% 
   write_csv("Data/charge_history.csv", append = TRUE)
 
 message(paste0("Scraping Activity... ", format.POSIXct(as.POSIXct(Sys.time(), tz = "GMT"), tz = "America/Chicago", usetz = TRUE)))
