@@ -5,9 +5,9 @@ account: andrewcouch
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5267108
-bundleId: 5327756
+bundleId: 5508128
 url: https://andrewcouch.shinyapps.io/Iowa_City_Police_Scraper/
-when: 1638642876.39724
-lastSyncTime: 1638642876.39724
+when: 1643153567.12927
+lastSyncTime: 1643153567.12927
 asMultiple: FALSE
 asStatic: FALSE

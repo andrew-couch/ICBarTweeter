@@ -1,25 +1,39 @@
 library(shiny)
 library(shinydashboard)
 library(tidyverse)
-library(here)
+library(DT)
 
-charges <- read_csv("https://raw.githubusercontent.com/andrew-couch/ICBarTweeter/main/Data/charge_history.csv?token=AMTFT4UMKIJHXWKWCJGYLVLBWTPAY")
-activity <- read_csv("https://raw.githubusercontent.com/andrew-couch/ICBarTweeter/main/Data/police_activity.csv?token=AMTFT4QVMGFJUCGL6UJBY63BWTPC2")
-bar_directory <- read_csv("https://raw.githubusercontent.com/andrew-couch/ICBarTweeter/main/Data/Bar%20Directory.csv?token=AMTFT4XZ53344JC5KSU7NKTBWTXSC")
+charges <- read_csv("https://raw.githubusercontent.com/andrew-couch/ICBarTweeter/main/Data/charge_history.csv")
+activity <- read_csv("https://raw.githubusercontent.com/andrew-couch/ICBarTweeter/main/Data/police_activity.csv")
+bar_directory <- read_csv("https://raw.githubusercontent.com/andrew-couch/ICBarTweeter/main/Data/Bar%20Directory.csv")
 
 ui <- dashboardPage(
   dashboardHeader(title = "Iowa City Police Data"),
-  dashboardSidebar(disable = TRUE),
+  dashboardSidebar(
+    sidebarMenu(
+      menuItem("Dashboard", tabName = "Summary"),
+      menuItem("Data", tabName = "Data") 
+    )
+  ),
   dashboardBody(
-    tabItem(tabName = "Summary",
-            fluidRow(valueBoxOutput("weekly_charges", width = 3), valueBoxOutput("weekly_activity", width = 3), 
-                     valueBoxOutput("weekly_jailed", width = 3), valueBoxOutput("weekly_alcohol", width = 3)),
-            
-            fluidRow(box(plotOutput("charges_history")), box(plotOutput("activity_history")),
-                     box(plotOutput("top_ten_charges")), box(plotOutput("top_ten_bars")))
+    tabItems(
+      tabItem(tabName = "Summary",
+              fluidRow(valueBoxOutput("weekly_charges", width = 3), valueBoxOutput("weekly_activity", width = 3), 
+                       valueBoxOutput("weekly_jailed", width = 3), valueBoxOutput("weekly_alcohol", width = 3)),
+              fluidRow(box(plotOutput("charges_history")), box(plotOutput("activity_history")),
+                       box(plotOutput("top_ten_charges")), box(plotOutput("top_ten_bars")))),
+      tabItem(
+        tabName = "Data",
+        fluidRow(
+          tabBox(title = "", id = "tabset1", width = 12,
+                 tabPanel("Charges", dataTableOutput("charges_tbl")),
+                 tabPanel("Activity", dataTableOutput("activity_tbl")))
+        )
+      )
     )
   )
 )
+
 
 server <- function(input, output) { 
   
@@ -117,6 +131,21 @@ server <- function(input, output) {
       ggplot(aes(x = n, y = bar, fill = bar)) + 
       geom_col(show.legend = FALSE) +
       labs(y = "", x = "Charges", title = "Bar Charges")
+  })
+  
+  output$charges_tbl <- renderDataTable({
+    charges %>% 
+      separate_rows(charges, sep = ";") %>% 
+      mutate(charges = str_trim(charges) %>% str_squish() %>% tolower(),
+             location = tolower(location) %>% str_trim() %>% str_squish()) %>% 
+      distinct() %>% 
+      arrange(desc(date), desc(time))
+  })
+  
+  output$activity_tbl <- renderDataTable({
+    activity %>% 
+      select(dispatch_number, date, time, activity, activity_medium, disposition, details, address, location, location_detail) %>% 
+      arrange(desc(date), desc(time))
   })
 }
 
