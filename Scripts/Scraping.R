@@ -46,7 +46,8 @@ read_html("https://www.iowa-city.org/IcgovApps/Police/ActivityLog") %>%
          dispatch_time = map_chr(link, ~html_element(.x, "dd:nth-child(4)") %>% html_text()),
          activity_medium = map_chr(link, ~html_element(.x, "dd:nth-child(8)") %>% html_text()),
          location = map_chr(link, ~html_element(.x, "dd:nth-child(12)") %>% html_text()),
-         location_detail = map_chr(link, ~html_element(.x, "dd:nth-child(14)") %>% html_text())) %>% 
+         location_detail = map_chr(link, ~html_element(.x, "dd:nth-child(14)") %>% html_text()),
+         details_text = map_chr(link ~html_element(.x, "dd:nth-child(18)") %>% html_text())) %>% 
   select(-link) %>% 
   separate(dispatch_time, c("date", "time"), sep = " ", extra = "merge") %>%
   mutate(date = as.Date(date, "%m/%d/%Y")) %>% 
