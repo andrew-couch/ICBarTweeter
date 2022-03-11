@@ -120,13 +120,18 @@ server <- function(input, output) {
       separate_rows(charges, sep = ";") %>% 
       mutate(charges = str_trim(charges) %>% str_squish() %>% tolower(),
              location = tolower(location) %>% str_trim() %>% str_squish()) %>% 
-      distinct() %>%
-      filter(location %in% bar_directory$Address | location %in% tolower(bar_directory$Names)) %>% 
-      left_join(bar_directory, by = c("location" = "Address")) %>% 
-      left_join(bar_directory %>% mutate(Names2 = Names, Names = tolower(Names)) %>% select(-Address), by = c("location" = "Names")) %>% 
-      mutate(bar = if_else(is.na(Names), Names2, Names)) %>% 
-      select(case_number, charges, bar) %>% 
-      count(bar) %>% 
+      distinct() %>% 
+      select(case_number, location) %>% 
+      inner_join(
+        bar_directory %>% 
+          mutate(across(.cols = everything(), .fns = ~str_squish(.x) %>% tolower())) %>% 
+          rename_with(tolower) %>%
+          mutate(bar = names) %>% 
+          pivot_longer(-bar) %>% 
+          select(value, bar),
+        by = c("location" = "value")
+      ) %>% 
+      count(bar, sort = T) %>% 
       mutate(bar = reorder(bar, n)) %>% 
       ggplot(aes(x = n, y = bar, fill = bar)) + 
       geom_col(show.legend = FALSE) +
@@ -136,16 +141,21 @@ server <- function(input, output) {
   output$charges_tbl <- renderDataTable({
     charges %>% 
       separate_rows(charges, sep = ";") %>% 
+      separate(name, c("last", "firstmiddle"), sep = ",", extra = "merge") %>% 
       mutate(charges = str_trim(charges) %>% str_squish() %>% tolower(),
-             location = tolower(location) %>% str_trim() %>% str_squish()) %>% 
+             location = tolower(location) %>% str_trim() %>% str_squish(),
+             firstmiddle = replace_na(firstmiddle, " "),
+             name = paste0(firstmiddle, " ", last) %>% str_squish() %>% str_to_title()) %>% 
       distinct() %>% 
-      arrange(desc(date), desc(time))
+      arrange(desc(date), desc(time)) %>% 
+      select(case_number, date, time, name, dob, charges, dob, jailed, officer)
   })
   
   output$activity_tbl <- renderDataTable({
     activity %>% 
-      select(dispatch_number, date, time, activity, activity_medium, disposition, details, address, location, location_detail) %>% 
-      arrange(desc(date), desc(time))
+      arrange(desc(date), desc(time)) %>% 
+      select(dispatch_number, date, time, activity, activity_medium, disposition, details_text, address, location) 
+      
   })
 }
 
