@@ -51,6 +51,8 @@ read_html("https://www.iowa-city.org/IcgovApps/Police/ActivityLog") %>%
   select(-link) %>% 
   separate(dispatch_time, c("date", "time"), sep = " ", extra = "merge") %>%
   mutate(date = as.Date(date, "%m/%d/%Y")) %>% 
+  select(dispatch_number, date, time, address, location, location_detail, activity, activity_medium, disposition, 
+        details, details_text) %>% 
   write_csv("Data/police_activity.csv", append = TRUE)
 
 message(paste0("Script Finished:", format.POSIXct(as.POSIXct(Sys.time(), tz = "GMT"), tz = "America/Chicago", usetz = TRUE)))
