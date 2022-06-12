@@ -1,0 +1,13 @@
+name: IC_Police_Scrape
+title: IC_Police_Scrape
+username:
+account: andrewcouch
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6475086
+bundleId: 6000444
+url: https://andrewcouch.shinyapps.io/IC_Police_Scrape/
+when: 1655048049.92087
+lastSyncTime: 1655048049.92088
+asMultiple: FALSE
+asStatic: FALSE

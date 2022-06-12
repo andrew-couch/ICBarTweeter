@@ -3,8 +3,8 @@ library(shinydashboard)
 library(tidyverse)
 library(DT)
 
-charges <- read_csv("https://raw.githubusercontent.com/andrew-couch/ICBarTweeter/main/Data/charge_history.csv")
-activity <- read_csv("https://raw.githubusercontent.com/andrew-couch/ICBarTweeter/main/Data/police_activity.csv")
+charges <- read_csv("https://raw.githubusercontent.com/andrew-couch/ICBarTweeter/main/Data/charge_history.csv") %>% filter(date <= Sys.Date())
+activity <- read_csv("https://raw.githubusercontent.com/andrew-couch/ICBarTweeter/main/Data/police_activity.csv") %>% filter(date <= Sys.Date())
 bar_directory <- read_csv("https://raw.githubusercontent.com/andrew-couch/ICBarTweeter/main/Data/Bar%20Directory.csv")
 
 ui <- dashboardPage(
